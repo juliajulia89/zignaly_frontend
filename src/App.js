@@ -1,12 +1,21 @@
-import './App.css';
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import HomePage from "./views/HomePage";
+import ListPhones from "./views/ListPhones";
+import SinglePhone from "./views/SinglePhone";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       
-    
-      </header>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/phones/:id" component={SinglePhone} />
+        <Route path="/phones" component={ListPhones} />
+        <Route exact path="/" component={HomePage} />
+      </Switch>
+      </BrowserRouter>
     </div>
   );
 }
