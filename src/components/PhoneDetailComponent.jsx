@@ -35,3 +35,5 @@ function SinglePhoneDetails(props) {
 }
 
 export default SinglePhoneDetails;
+
+

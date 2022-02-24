@@ -6,11 +6,11 @@ function Navbar() {
     <header className="header">
       <Link to="/">
         <span className="flex justify-center">
-          <button>back to home</button>
+          <button>HOME</button>
         </span>
       </Link>
     </header>
-  );
+  ); 
 }
 
 export default Navbar;
