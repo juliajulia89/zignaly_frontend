@@ -32,7 +32,7 @@ function ListPhone() {
       })}
       {phones.length === 0 && (
         <p className="error-message">
-          Oops we run out this one! Don't worry, there are plenty more.
+          Oops! Give us a second.
         </p>
       )}
     </>
